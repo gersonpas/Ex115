@@ -1,5 +1,5 @@
-Gustavo 41
-Ana     22
-Pedro   35
-Paulo   95
-Jose    55
+Gerson PAS;59
+Jose Silva;35
+Maria dos Santos;85
+Wellington;32
+Gustavo Soares;25

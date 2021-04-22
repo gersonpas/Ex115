@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>__init__.py</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<style type="text/css">
+.s0 { color: #cc7832;}
+.s1 { color: #a9b7c6;}
+.s2 { color: #6a8759;}
+.s3 { color: #6897bb;}
+.s4 { color: #808080;}
+</style>
+</head>
+<body bgcolor="#2b2b2b">
+<table CELLSPACING=0 CELLPADDING=5 COLS=1 WIDTH="100%" BGCOLOR="#606060" >
+<tr><td><center>
+<font face="Arial, Helvetica" color="#000000">
+__init__.py</font>
+</center></td></tr></table>
+<pre><span class="s0">def </span><span class="s1">leiaInt(msg):</span>
+  <span class="s0">while True</span><span class="s1">:</span>
+    <span class="s0">try</span><span class="s1">:</span>
+      <span class="s1">n = int(input(msg))</span>
+    <span class="s0">except </span><span class="s1">(ValueError</span><span class="s0">, </span><span class="s1">TypeError):</span>
+      <span class="s1">print(</span><span class="s2">'ERRO: Por favor digite um número inteiro válido.'</span><span class="s1">)</span>
+      <span class="s0">continue</span>
+    <span class="s0">except </span><span class="s1">(KeyboardInterrupt):</span>
+      <span class="s1">print(</span><span class="s2">'</span><span class="s0">\033</span><span class="s2">[31mEntrada de dados interrompida pelo usuário.</span><span class="s0">\033</span><span class="s2">[m'</span><span class="s1">)</span>
+      <span class="s0">return </span><span class="s3">0</span>
+    <span class="s0">else</span><span class="s1">:</span>
+      <span class="s0">return </span><span class="s1">n</span>
+
+
+<span class="s0">def </span><span class="s1">linha(tam=</span><span class="s3">42</span><span class="s1">):</span>
+    <span class="s0">return </span><span class="s2">'-' </span><span class="s1">* tam</span>
+
+<span class="s0">def </span><span class="s1">cabeçalho(txt):</span>
+    <span class="s1">print((linha()))</span>
+    <span class="s1">print(txt.center(</span><span class="s3">42</span><span class="s1">))</span>
+    <span class="s1">print(linha())</span>
+
+<span class="s0">def </span><span class="s1">menu(lista):</span>
+    <span class="s1">cabeçalho(</span><span class="s2">'MENU PRINCIPAL'</span><span class="s1">)</span>
+    <span class="s4">#print(lista)</span>
+    <span class="s1">c = </span><span class="s3">1</span>
+    <span class="s0">for </span><span class="s1">item </span><span class="s0">in </span><span class="s1">lista:</span>
+        <span class="s1">print(</span><span class="s2">f'</span><span class="s0">\033</span><span class="s2">[33m</span><span class="s0">{</span><span class="s1">c</span><span class="s0">} </span><span class="s2">-</span><span class="s0">\033</span><span class="s2">[34m </span><span class="s0">{</span><span class="s1">item</span><span class="s0">}\033</span><span class="s2">[m'</span><span class="s1">)</span>
+        <span class="s1">c += </span><span class="s3">1</span>
+    <span class="s1">print(linha())</span>
+    <span class="s1">opc = leiaInt(</span><span class="s2">'</span><span class="s0">\033</span><span class="s2">[32mSua Opção:</span><span class="s0">\033</span><span class="s2">[m '</span><span class="s1">)</span>
+    <span class="s0">return </span><span class="s1">opc</span>
+</pre>
+</body>
+</html>
